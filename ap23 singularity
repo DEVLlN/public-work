@@ -3,7 +3,7 @@ On my laptop, in the `${HOME}/.ssh/config` file, I added:
 
 ```
 Host singularity_*
-  RemoteCommand singularity run -B /scratch/$USER/work -B /ospool/uc-shared/public/futurecolliders/BIB10TeV:/data/bib10 -B /ospool/uc-shared/user/$USER/data/samples/:/data/HBB /cvmfs/unpacked.cern.ch/registry.hub.docker.com/infnpd/mucoll-ilc-framework:1.6-centos8'
+  RemoteCommand singularity run -B /scratch/$USER/work -B /ospool/uc-shared/public/futurecolliders/BIB10TeV:/data/bib10 -B /ospool/uc-shared/user/$USER/data/samples/:/data/HBB /cvmfs/unpacked.cern.ch/registry.hub.docker.com/infnpd/mucoll-ilc-framework:1.6-centos8
   RequestTTY yes
 Host ap23 singularity_ap23
   HostName ap23.uc.osg-htc.org
